@@ -1,0 +1,31 @@
+{
+  "name": "electron-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "w": "npm run watch",
+    "e": "npm run electron",
+    "watch": "tsc -w",
+    "electron": "./node_modules/.bin/electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyPythoneer/electron-lab.git"
+  },
+  "author": "TonyPythoneer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyPythoneer/electron-lab/issues"
+  },
+  "homepage": "https://github.com/TonyPythoneer/electron-lab#readme",
+  "devDependencies": {
+    "electron-packager": "^7.0.3",
+    "electron-prebuilt": "^1.2.2",
+    "electron-rebuild": "^1.1.5",
+    "redux-devtools": "^3.2.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.0"
+  }
+}
