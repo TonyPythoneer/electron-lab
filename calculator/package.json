@@ -7,7 +7,9 @@
     "w": "npm run watch",
     "e": "npm run electron",
     "watch": "tsc -w",
-    "electron": "./node_modules/.bin/electron ."
+    "electron": "./node_modules/.bin/electron .",
+    "package-a": "electron-packager . app --platform=linux --arch=x64 --out=release/ --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=node_modules/typescript --ignore=.git --ignore=app/*.ts --ignore=app/*.tsx",
+    "package": "ts-node ./scripts/package"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.10",
     "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "electron-jade": "^1.3.1"
   }
 }
